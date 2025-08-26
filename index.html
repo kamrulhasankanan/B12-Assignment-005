@@ -21,6 +21,15 @@
 
     <!-- tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -70,6 +79,32 @@
         </p>
       </section>
     </header>
-    <main></main>
+    <main class="bg-[#f5fff6]">
+      <!-- Emergency Hotline Section starts here -->
+      <section id="card-container" class="w-11/12 mx-auto py-10 grid grid-cols-12">
+        <section class="border-2 border-red-500 col-span-9">
+          <div class="card w-96 bg-base-100 card-sm shadow-sm">
+            <div class="card-body">
+              <div class="flex justify-between items-center">
+                <img class="w-16" src="./assets/ambulance.png" alt="" />
+                <div><i class="fa-regular fa-heart text-2xl"></i></div>
+              </div>
+              <h2 class="card-title">National Emergency Number</h2>
+              <p>National Emergency</p>
+              <h2 class="card-title">999</h2>
+              <p>All</p>
+              <div class="justify-center card-actions">
+                <button class="btn btn-neutral btn-outline">Copy</button>
+                <button class="btn btn-success">Call</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Call history section starts here -->
+        <aside class="border-2 border-green-500 col-span-3">
+          <h2>Call history</h2>
+        </aside>
+      </section>
+    </main>
   </body>
 </html>
