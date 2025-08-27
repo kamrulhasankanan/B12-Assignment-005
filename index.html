@@ -83,10 +83,10 @@
       <!-- Emergency Hotline Section starts here -->
       <section
         id="card-container"
-        class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-8"
+        class="md:w-11/12 md:mx-auto py-10 grid md:grid-cols-12 gap-8"
       >
-        <section class="col-span-9">
-          <div class="grid grid-cols-3 gap-7">
+        <section class="md:col-span-9">
+          <div class="grid md:grid-cols-3 gap-7">
             <!-- emergency number card -->
             <div class="card w-96 bg-base-100 card-sm shadow-sm">
               <div class="card-body">
@@ -278,7 +278,9 @@
                 </div>
                 <div>
                   <h2 class="font-bold text-3xl">16216</h2>
-                  <p class="badge badge-ghost text-gray-600 text-lg">Electricity</p>
+                  <p class="badge badge-ghost text-gray-600 text-lg">
+                    Electricity
+                  </p>
                 </div>
                 <div class="justify-center card-actions">
                   <button class="btn btn-neutral btn-outline">
@@ -331,7 +333,7 @@
                   <div><i class="fa-regular fa-heart text-2xl"></i></div>
                 </div>
                 <div>
-                  <h2 class="font-bold text-xl">Bangladesh Railway Helpline </h2>
+                  <h2 class="font-bold text-xl">Bangladesh Railway Helpline</h2>
                   <p class="text-lg text-[#5C5C5C]">Bangladesh Railway</p>
                 </div>
                 <div>
@@ -351,8 +353,31 @@
           </div>
         </section>
         <!-- History section starts here -->
-        <aside class="border-2 border-green-500 col-span-3">
-          <h2>Call history</h2>
+        <aside class="md:col-span-3 card w-96 bg-base-100 card-sm shadow-sm">
+          <div class="card w-96 bg-base-100 card-sm p-5">
+            <div class="flex justify-between items-center">
+              <h2 class="text-xl font-medium">
+                <i class="fa-regular fa-clock"></i> Call history
+              </h2>
+              <div
+                class="bg-[#00a63e] rounded-xl md:rounded-3xl p-1 md:px-6 md:py-2"
+              >
+                <h2 class="font-semibold text-white">Clear</h2>
+              </div>
+            </div>
+          </div>
+          <!-- call history -->
+          <div class="p-4">
+            <div
+              class="flex justify-between items-center p-5 bg-[#fafafa] rounded-lg"
+            >
+              <div>
+                <h2 class="text-lg font-semibold">Fire Service Number</h2>
+                <p class="text-lg text-[#5C5C5C]">999</p>
+              </div>
+              <h2 class="text-lg">11:36:58 AM</h2>
+            </div>
+          </div>
         </aside>
       </section>
     </main>
