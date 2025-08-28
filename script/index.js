@@ -65,6 +65,14 @@ function callHandle(card) {
       `;
       historyContainer.appendChild(div);
     }
+
+    const clearBtn = document.getElementById("clear-btn");
+    clearBtn.addEventListener("click", function () {
+      historyData = [];
+
+      const historyContainer = document.getElementById("history-container");
+      historyContainer.innerHTML = "";
+    });
   });
 }
 
