@@ -56,10 +56,10 @@ function callHandle(card) {
               class="flex justify-between items-center p-5 bg-[#fafafa] rounded-lg"
             >
               <div>
-                <h2 class="text-lg font-semibold">${data.name}</h2>
-                <p class="text-lg text-[#5C5C5C]">${data.number}</p>
+                <h2 class="text-sm font-semibold">${data.name}</h2>
+                <p class="text-sm text-[#5C5C5C]">${data.number}</p>
               </div>
-              <h2 class="text-lg">${data.date}</h2>
+              <h2 class="text-[10px]">${data.date}</h2>
             </div>
           </div>
       `;
@@ -76,8 +76,24 @@ function callHandle(card) {
   });
 }
 
+// copy functionality
+
+function copyHandle(card) {
+  const btn = card.querySelector(".copy-btn");
+  const copyCount = document.getElementById("copy-count");
+  const textEl = card.querySelector(".service-number");
+  btn.addEventListener("click", function () {
+    const copyText = textEl.innerText;
+    navigator.clipboard.writeText(copyText);
+    alert("Copied");
+
+    copyCount.innerText = parseInt(copyCount.innerText) + 1;
+  });
+}
+
 const cards = document.querySelectorAll(".card");
 
 for (let i = 0; i < cards.length; i++) {
   callHandle(cards[i]);
+  copyHandle(cards[i]);
 }
