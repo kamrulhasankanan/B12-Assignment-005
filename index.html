@@ -47,13 +47,13 @@
           <div
             class="flex justify-between items-center gap-2 bg-[#41ff6b1a] rounded-xl md:rounded-3xl p-1 md:px-6 md:py-1"
           >
-            <h2 class="font-extrabold">0</h2>
+            <h2 id="heart-count" class="font-extrabold">0</h2>
             <img class="w-7" src="./assets/heart.png" alt="" />
           </div>
           <div
             class="flex justify-between items-center gap-2 bg-[#41ff6b1a] rounded-xl md:rounded-3xl p-1 md:px-5 md:py-1"
           >
-            <h2 class="font-extrabold">100</h2>
+            <h2 id="coin-count" class="font-extrabold">100</h2>
             <img class="w-7" src="./assets/coin.png" alt="" />
           </div>
           <div
@@ -81,10 +81,7 @@
     </header>
     <main class="bg-[#f5fff6]">
       <!-- Emergency Hotline Section starts here -->
-      <section
-        id="card-container"
-        class="md:w-11/12 md:mx-auto py-10 grid md:grid-cols-12 gap-8"
-      >
+      <section class="md:w-11/12 md:mx-auto py-10 grid md:grid-cols-12 gap-8">
         <section class="md:col-span-9">
           <div class="grid md:grid-cols-3 gap-7">
             <!-- emergency number card -->
@@ -96,21 +93,25 @@
                     src="./assets/emergency.png"
                     alt=""
                   />
-                  <div><i class="fa-regular fa-heart text-2xl"></i></div>
+                  <div class="heart-btn">
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
                 </div>
                 <div>
-                  <h2 class="font-bold text-xl">National Emergency Number</h2>
+                  <h2 class="font-bold text-xl service-name">
+                    National Emergency Number
+                  </h2>
                   <p class="text-lg text-[#5C5C5C]">National Emergency</p>
                 </div>
                 <div>
-                  <h2 class="font-bold text-3xl">999</h2>
+                  <h2 class="font-bold text-3xl service-number">999</h2>
                   <p class="badge badge-ghost text-gray-600 text-lg">All</p>
                 </div>
                 <div class="justify-center card-actions">
-                  <button class="btn btn-neutral btn-outline">
+                  <button class="btn btn-neutral btn-outline w-40">
                     <i class="fa-regular fa-clone rotate-90"></i>Copy
                   </button>
-                  <button class="btn btn-success">
+                  <button class="btn btn-success w-40 call-btn">
                     <i class="fa-solid fa-phone"></i>Call
                   </button>
                 </div>
@@ -125,21 +126,25 @@
                     src="./assets/police.png"
                     alt=""
                   />
-                  <div><i class="fa-regular fa-heart text-2xl"></i></div>
+                  <div class="heart-btn">
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
                 </div>
                 <div>
-                  <h2 class="font-bold text-xl">Police Helpline Number</h2>
+                  <h2 class="font-bold text-xl service-name">
+                    Police Helpline Number
+                  </h2>
                   <p class="text-lg text-[#5C5C5C]">Police</p>
                 </div>
                 <div>
-                  <h2 class="font-bold text-3xl">999</h2>
+                  <h2 class="font-bold text-3xl service-number">999</h2>
                   <p class="badge badge-ghost text-gray-600 text-lg">Police</p>
                 </div>
                 <div class="justify-center card-actions">
-                  <button class="btn btn-neutral btn-outline">
+                  <button class="btn btn-neutral btn-outline w-40">
                     <i class="fa-regular fa-clone rotate-90"></i>Copy
                   </button>
-                  <button class="btn btn-success">
+                  <button class="btn btn-success w-40 call-btn">
                     <i class="fa-solid fa-phone"></i>Call
                   </button>
                 </div>
@@ -154,21 +159,25 @@
                     src="./assets/fire-service.png"
                     alt=""
                   />
-                  <div><i class="fa-regular fa-heart text-2xl"></i></div>
+                  <div class="heart-btn">
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
                 </div>
                 <div>
-                  <h2 class="font-bold text-xl">Fire Service Number</h2>
+                  <h2 class="font-bold text-xl service-name">
+                    Fire Service Number
+                  </h2>
                   <p class="text-lg text-[#5C5C5C]">Fire Service</p>
                 </div>
                 <div>
-                  <h2 class="font-bold text-3xl">999</h2>
+                  <h2 class="font-bold text-3xl service-number">999</h2>
                   <p class="badge badge-ghost text-gray-600 text-lg">Fire</p>
                 </div>
                 <div class="justify-center card-actions">
-                  <button class="btn btn-neutral btn-outline">
+                  <button class="btn btn-neutral btn-outline w-40">
                     <i class="fa-regular fa-clone rotate-90"></i>Copy
                   </button>
-                  <button class="btn btn-success">
+                  <button class="btn btn-success w-40 call-btn">
                     <i class="fa-solid fa-phone"></i>Call
                   </button>
                 </div>
@@ -183,21 +192,25 @@
                     src="./assets/ambulance.png"
                     alt=""
                   />
-                  <div><i class="fa-regular fa-heart text-2xl"></i></div>
+                  <div class="heart-btn">
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
                 </div>
                 <div>
-                  <h2 class="font-bold text-xl">Ambulance Service</h2>
+                  <h2 class="font-bold text-xl service-name">
+                    Ambulance Service
+                  </h2>
                   <p class="text-lg text-[#5C5C5C]">Ambulance</p>
                 </div>
                 <div>
-                  <h2 class="font-bold text-3xl">1994-999999</h2>
+                  <h2 class="font-bold text-3xl service-number">1994-999999</h2>
                   <p class="badge badge-ghost text-gray-600 text-lg">Health</p>
                 </div>
                 <div class="justify-center card-actions">
-                  <button class="btn btn-neutral btn-outline">
+                  <button class="btn btn-neutral btn-outline w-40">
                     <i class="fa-regular fa-clone rotate-90"></i>Copy
                   </button>
-                  <button class="btn btn-success">
+                  <button class="btn btn-success w-40 call-btn">
                     <i class="fa-solid fa-phone"></i>Call
                   </button>
                 </div>
@@ -212,21 +225,25 @@
                     src="./assets/emergency.png"
                     alt=""
                   />
-                  <div><i class="fa-regular fa-heart text-2xl"></i></div>
+                  <div class="heart-btn">
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
                 </div>
                 <div>
-                  <h2 class="font-bold text-xl">Women & Child Helpline</h2>
+                  <h2 class="font-bold text-xl service-name">
+                    Women & Child Helpline
+                  </h2>
                   <p class="text-lg text-[#5C5C5C]">Women & Child Helpline</p>
                 </div>
                 <div>
-                  <h2 class="font-bold text-3xl">109</h2>
+                  <h2 class="font-bold text-3xl service-number">109</h2>
                   <p class="badge badge-ghost text-gray-600 text-lg">Help</p>
                 </div>
                 <div class="justify-center card-actions">
-                  <button class="btn btn-neutral btn-outline">
+                  <button class="btn btn-neutral btn-outline w-40">
                     <i class="fa-regular fa-clone rotate-90"></i>Copy
                   </button>
-                  <button class="btn btn-success">
+                  <button class="btn btn-success w-40 call-btn">
                     <i class="fa-solid fa-phone"></i>Call
                   </button>
                 </div>
@@ -241,21 +258,25 @@
                     src="./assets/emergency.png"
                     alt=""
                   />
-                  <div><i class="fa-regular fa-heart text-2xl"></i></div>
+                  <div class="heart-btn">
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
                 </div>
                 <div>
-                  <h2 class="font-bold text-xl">Anti-Corruption Helpline</h2>
+                  <h2 class="font-bold text-xl service-name">
+                    Anti-Corruption Helpline
+                  </h2>
                   <p class="text-lg text-[#5C5C5C]">Anti-Corruption</p>
                 </div>
                 <div>
-                  <h2 class="font-bold text-3xl">106</h2>
+                  <h2 class="font-bold text-3xl service-number">106</h2>
                   <p class="badge badge-ghost text-gray-600 text-lg">Govt.</p>
                 </div>
                 <div class="justify-center card-actions">
-                  <button class="btn btn-neutral btn-outline">
+                  <button class="btn btn-neutral btn-outline w-40">
                     <i class="fa-regular fa-clone rotate-90"></i>Copy
                   </button>
-                  <button class="btn btn-success">
+                  <button class="btn btn-success w-40 call-btn">
                     <i class="fa-solid fa-phone"></i>Call
                   </button>
                 </div>
@@ -270,23 +291,27 @@
                     src="./assets/emergency.png"
                     alt=""
                   />
-                  <div><i class="fa-regular fa-heart text-2xl"></i></div>
+                  <div class="heart-btn">
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
                 </div>
                 <div>
-                  <h2 class="font-bold text-xl">Electricity Helpline</h2>
+                  <h2 class="font-bold text-xl service-name">
+                    Electricity Helpline
+                  </h2>
                   <p class="text-lg text-[#5C5C5C]">Electricity Outage</p>
                 </div>
                 <div>
-                  <h2 class="font-bold text-3xl">16216</h2>
+                  <h2 class="font-bold text-3xl service-number">16216</h2>
                   <p class="badge badge-ghost text-gray-600 text-lg">
                     Electricity
                   </p>
                 </div>
                 <div class="justify-center card-actions">
-                  <button class="btn btn-neutral btn-outline">
+                  <button class="btn btn-neutral btn-outline w-40">
                     <i class="fa-regular fa-clone rotate-90"></i>Copy
                   </button>
-                  <button class="btn btn-success">
+                  <button class="btn btn-success w-40 call-btn">
                     <i class="fa-solid fa-phone"></i>Call
                   </button>
                 </div>
@@ -298,24 +323,26 @@
                 <div class="flex justify-between items-center">
                   <img
                     class="w-16 p-3 rounded-2xl bg-[#FFE3E2]"
-                    src="./assets/emergency.png"
+                    src="./assets/brac.png"
                     alt=""
                   />
-                  <div><i class="fa-regular fa-heart text-2xl"></i></div>
+                  <div class="heart-btn">
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
                 </div>
                 <div>
-                  <h2 class="font-bold text-xl">Brac Helpline</h2>
+                  <h2 class="font-bold text-xl service-name">Brac Helpline</h2>
                   <p class="text-lg text-[#5C5C5C]">Brac</p>
                 </div>
                 <div>
-                  <h2 class="font-bold text-3xl">16445</h2>
+                  <h2 class="font-bold text-3xl service-number">16445</h2>
                   <p class="badge badge-ghost text-gray-600 text-lg">NGO</p>
                 </div>
                 <div class="justify-center card-actions">
-                  <button class="btn btn-neutral btn-outline">
+                  <button class="btn btn-neutral btn-outline w-40">
                     <i class="fa-regular fa-clone rotate-90"></i>Copy
                   </button>
-                  <button class="btn btn-success">
+                  <button class="btn btn-success w-40 call-btn">
                     <i class="fa-solid fa-phone"></i>Call
                   </button>
                 </div>
@@ -327,24 +354,28 @@
                 <div class="flex justify-between items-center">
                   <img
                     class="w-16 p-3 rounded-2xl bg-[#FFE3E2]"
-                    src="./assets/emergency.png"
+                    src="./assets/Bangladesh-Railway.png"
                     alt=""
                   />
-                  <div><i class="fa-regular fa-heart text-2xl"></i></div>
+                  <div class="heart-btn">
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
                 </div>
                 <div>
-                  <h2 class="font-bold text-xl">Bangladesh Railway Helpline</h2>
+                  <h2 class="font-bold text-xl service-name">
+                    Bangladesh Railway Helpline
+                  </h2>
                   <p class="text-lg text-[#5C5C5C]">Bangladesh Railway</p>
                 </div>
                 <div>
-                  <h2 class="font-bold text-3xl">163</h2>
+                  <h2 class="font-bold text-3xl service-number">163</h2>
                   <p class="badge badge-ghost text-gray-600 text-lg">Travel</p>
                 </div>
                 <div class="justify-center card-actions">
-                  <button class="btn btn-neutral btn-outline">
+                  <button class="btn btn-neutral btn-outline w-40">
                     <i class="fa-regular fa-clone rotate-90"></i>Copy
                   </button>
-                  <button class="btn btn-success">
+                  <button class="btn btn-success w-40 call-btn">
                     <i class="fa-solid fa-phone"></i>Call
                   </button>
                 </div>
@@ -367,19 +398,12 @@
             </div>
           </div>
           <!-- call history -->
-          <div class="p-4">
-            <div
-              class="flex justify-between items-center p-5 bg-[#fafafa] rounded-lg"
-            >
-              <div>
-                <h2 class="text-lg font-semibold">Fire Service Number</h2>
-                <p class="text-lg text-[#5C5C5C]">999</p>
-              </div>
-              <h2 class="text-lg">11:36:58 AM</h2>
-            </div>
-          </div>
+          <div id="history-container"></div>
         </aside>
       </section>
     </main>
+
+    <!-- js scripts  -->
+    <script src="./script/index.js"></script>
   </body>
 </html>
