@@ -35,7 +35,7 @@ function callHandle(card) {
     coins = coins - 20;
     updateCoin();
 
-    alert("Calling " + serviceName + " at " + serviceNumber);
+    alert("📞" + "Calling " + serviceName + " at " + serviceNumber + "...");
 
     const data = {
       name: serviceName,
